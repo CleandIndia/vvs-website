@@ -224,3 +224,93 @@ textarea { min-height: 120px; resize: vertical; }
   .banner-inner { flex-direction: column; align-items: flex-start; }
   .footer-bottom { flex-direction: column; gap: 10px; }
 }
+
+/* Desktop layout refinement - added after screenshot review */
+@media (min-width: 1041px) {
+  :root { --max: 1320px; }
+
+  .site-header .nav-wrap {
+    min-height: 72px;
+  }
+
+  .logo img {
+    width: 215px;
+  }
+
+  .nav {
+    gap: 18px;
+    font-size: .76rem;
+  }
+
+  .nav a {
+    padding: 25px 0 21px;
+  }
+
+  .hero {
+    min-height: auto;
+  }
+
+  .hero-grid {
+    grid-template-columns: minmax(590px, 1.05fr) minmax(500px, .95fr);
+    gap: 70px;
+    min-height: 620px;
+    padding: 64px 0 58px;
+    align-items: center;
+  }
+
+  .hero-copy {
+    max-width: 760px;
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(4.2rem, 5vw, 5.35rem);
+    line-height: .98;
+    max-width: 760px;
+    letter-spacing: -.035em;
+  }
+
+  .hero-copy p {
+    max-width: 620px;
+    font-size: 1.04rem;
+  }
+
+  .hero-image {
+    align-self: center;
+    justify-self: end;
+    width: 100%;
+  }
+
+  .hero-image img {
+    width: min(100%, 640px);
+    height: 470px;
+    object-fit: cover;
+    object-position: 68% center;
+    border-radius: 0 0 0 64px;
+  }
+}
+
+@media (min-width: 1041px) and (max-width: 1240px) {
+  :root { --max: 1120px; }
+
+  .hero-grid {
+    grid-template-columns: 1fr .9fr;
+    gap: 42px;
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(3.6rem, 4.5vw, 4.45rem);
+  }
+
+  .hero-image img {
+    height: 420px;
+  }
+
+  .nav {
+    gap: 13px;
+    font-size: .70rem;
+  }
+
+  .logo img {
+    width: 190px;
+  }
+}
