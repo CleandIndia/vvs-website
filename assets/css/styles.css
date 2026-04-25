@@ -429,3 +429,158 @@ textarea { min-height: 120px; resize: vertical; }
     max-width: 240px !important;
   }
 }
+
+
+/* ===== Final UI refinement fix ===== */
+.logo img {
+  width: 340px !important;
+  max-width: 340px !important;
+  min-height: auto !important;
+}
+.footer-logo {
+  width: 320px !important;
+}
+@media (max-width: 1200px) {
+  .logo img { width: 280px !important; max-width: 280px !important; }
+}
+@media (max-width: 700px) {
+  .logo img { width: 220px !important; max-width: 220px !important; }
+  .footer-logo { width: 240px !important; }
+}
+
+.hero-image {
+  align-self: center !important;
+}
+.hero-image img {
+  width: min(100%, 640px) !important;
+  height: auto !important;
+  max-height: none !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  border-radius: 0 0 0 48px;
+}
+@media (min-width: 1041px) {
+  .hero-grid {
+    min-height: 640px;
+    align-items: center;
+  }
+}
+
+.socials a {
+  width: 42px;
+  height: 42px;
+  border-radius: 999px;
+  border: 1px solid rgba(201,154,61,.38);
+  background: rgba(255,255,255,.02);
+}
+.socials a svg {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+.socials a:hover {
+  background: rgba(201,154,61,.12);
+  border-color: var(--gold);
+}
+
+.contact-card,
+.contact-card p,
+.contact-card a,
+.contact-card strong,
+.contact-card .contact-item {
+  color: #f4ecdf !important;
+}
+.contact-item strong { color: var(--gold-light) !important; }
+
+.footer-bottom {
+  align-items: center;
+  gap: 18px;
+}
+.copyright-line {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
+.lead-banana-link {
+  display: inline-flex;
+  align-items: center;
+}
+.lead-banana-logo {
+  height: 24px !important;
+  width: auto;
+  max-width: 160px;
+  padding: 0 !important;
+  background: transparent !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+@media (max-width: 700px) {
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .copyright-line {
+    white-space: normal;
+    flex-wrap: wrap;
+  }
+  .lead-banana-logo {
+    height: 20px !important;
+  }
+}
+
+.bot-panel {
+  width: min(360px, calc(100vw - 32px));
+}
+.bot-powered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 16px 14px;
+  border-top: 1px solid rgba(255,255,255,.08);
+  color: #d8cfbf;
+  font-size: .8rem;
+}
+.bot-powered img {
+  height: 18px;
+  width: auto;
+}
+.bot-float {
+  width: auto;
+  min-width: 0;
+  height: 58px;
+  border-radius: 999px;
+  padding: 0 18px 0 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: .95rem;
+  font-weight: 800;
+  letter-spacing: .01em;
+  background: #25d366;
+  color: #fff;
+}
+.bot-float-icon {
+  width: 28px;
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.bot-float-icon svg {
+  width: 28px;
+  height: 28px;
+}
+@media (max-width: 700px) {
+  .bot-float {
+    height: 54px;
+    padding: 0 14px 0 12px;
+    font-size: .88rem;
+  }
+  .bot-float span:last-child {
+    max-width: 116px;
+    line-height: 1.1;
+  }
+}
