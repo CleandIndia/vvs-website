@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 130" role="img" aria-label="Vijay Vikram Singh logo">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#F0C46D"/>
+      <stop offset="0.45" stop-color="#C99A3D"/>
+      <stop offset="1" stop-color="#8F6423"/>
+    </linearGradient>
+  </defs>
+  <rect width="520" height="130" fill="none"/>
+  <text x="8" y="82" font-family="Georgia, Times New Roman, serif" font-size="82" font-weight="700" fill="url(#g)">VS</text>
+  <text x="128" y="48" font-family="Georgia, Times New Roman, serif" font-size="27" letter-spacing="4" fill="#F8F2E8">VIJAY VIKRAM SINGH</text>
+  <text x="130" y="79" font-family="Arial, sans-serif" font-size="11" letter-spacing="4" fill="#C99A3D">NARRATOR | ACTOR | SPEAKER | COACH</text>
+</svg>
