@@ -314,3 +314,118 @@ textarea { min-height: 120px; resize: vertical; }
     width: 190px;
   }
 }
+
+/* Logo visibility fix - high-contrast VVS wordmark across every page */
+.logo {
+  display: inline-flex;
+  align-items: center;
+  flex: 0 0 auto;
+  line-height: 0;
+}
+.logo img {
+  display: block;
+  width: 255px;
+  max-width: 255px;
+  height: auto;
+  object-fit: contain;
+  opacity: 1;
+  filter: none;
+}
+.footer-logo {
+  display: block;
+  width: 275px !important;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 18px;
+}
+@media (min-width: 1041px) and (max-width: 1240px) {
+  .logo img { width: 220px; max-width: 220px; }
+}
+@media (max-width: 700px) {
+  .logo img { width: 205px; max-width: 205px; }
+  .footer-logo { width: 230px !important; }
+}
+
+/* Final visibility fixes: header logo, contact card text, Lead Banana copyright */
+.site-header {
+  background: rgba(8, 8, 8, 0.98);
+}
+.nav-wrap {
+  min-height: 84px;
+}
+.logo {
+  min-width: 300px;
+}
+.logo img {
+  width: 300px !important;
+  max-width: 300px !important;
+  min-height: 54px;
+}
+.footer-logo {
+  width: 285px !important;
+}
+.contact-card {
+  color: #f7f1e7 !important;
+  background: linear-gradient(180deg, #171717 0%, #0f0f0f 100%) !important;
+  border-color: rgba(201, 154, 61, 0.42) !important;
+}
+.contact-card p,
+.contact-card a,
+.contact-item p {
+  color: #eee6d8 !important;
+  opacity: 1 !important;
+}
+.contact-card strong,
+.contact-item strong {
+  color: #e6bd70 !important;
+  opacity: 1 !important;
+}
+.contact-item {
+  border-bottom-color: rgba(255, 255, 255, 0.14) !important;
+}
+.copyright-line {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  flex-wrap: wrap;
+  color: #cfc6b7;
+}
+.lead-banana-logo {
+  display: inline-block;
+  height: 32px;
+  width: auto;
+  max-width: 210px;
+  background: #ffffff;
+  border-radius: 7px;
+  padding: 4px 8px;
+  vertical-align: middle;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, .25);
+}
+@media (max-width: 1040px) {
+  .logo {
+    min-width: 0;
+  }
+  .logo img {
+    width: 240px !important;
+    max-width: 240px !important;
+  }
+}
+@media (max-width: 700px) {
+  .logo img {
+    width: 218px !important;
+    max-width: 218px !important;
+  }
+  .lead-banana-logo {
+    height: 28px;
+    max-width: 180px;
+  }
+}
+@media (min-width: 1041px) and (max-width: 1240px) {
+  .logo {
+    min-width: 240px;
+  }
+  .logo img {
+    width: 240px !important;
+    max-width: 240px !important;
+  }
+}
